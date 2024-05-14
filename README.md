@@ -1,5 +1,20 @@
 # pg-notify-springboot-application
 pg_notify-springboot-application  read event trigger in springboot application
+ALTER SYSTEM SET wal_level = logical;
+
+C:\Windows\system32>pg_ctl stop -D "C:\Program Files\PostgreSQL\15\data"
+
+C:\Windows\system32>cd "C:\Program Files\PostgreSQL\15\bin"
+
+C:\Program Files\PostgreSQL\15\bin>pg_ctl stop -D "C:\Program Files\PostgreSQL\15\data"
+waiting for server to shut down.... done
+server stopped
+
+C:\Program Files\PostgreSQL\15\bin>pg_ctl start -D "C:\Program Files\PostgreSQL\15\data"
+waiting for server to start....2024-05-12 21:46:20.286 IST [43732] LOG:  redirecting log output to logging collector process
+2024-05-12 21:46:20.286 IST [43732] HINT:  Future log output will appear in directory "log".
+ done
+server started
 
 
 
